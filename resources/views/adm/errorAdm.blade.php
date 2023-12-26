@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
-    <link rel="stylesheet" href="../css-atual/style.css">
-     <link rel="icon" type="image/x-icon" href="../imgs/Oficial.gif">
-     <script src="../js/Requisicoes/requisicaoHeader/header.js" defer></script>
+    <link rel="stylesheet" href="/css-atual/style.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/Oficial.gif">
+    <script src="/js/Requisicoes/Header/header.js" defer></script>
     <script src="../js/Requisicoes/requisicaoDeErrosAdm/requisicaoErro.js" defer></script>
 </head>
 <body>
-    <header class="header"></header>
+    <x-header/>
     <section id="sectionErroAdm">
-        <a href="painelPerfilAdm.html" id="volteInicio">Início</a>
+        <a href="/admin" id="volteInicio">Início</a>
         <div class="boxInfoErro">
            <div class="titleInforErro">Data do erro: <span class="inforErro">06-10-23 as 10:34</span></div>
            <div class="titleInforErro">Localização do erro: <span class="inforErro">renderiza\u00e7\u00e3o de template</span></div>

@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Produto</title>
-    <link rel="stylesheet" href="../css-atual/style.css">
-    <link rel="icon" type="image/x-icon" href="../imgs/Oficial.gif">
-    <script src="../js/Requisicoes/requisicaoHeader/header.js" defer></script>
-    <script type="module"  src="/estaticos/js/cadasterProductCreation/classificacao.js" defer></script>
+    <link rel="stylesheet" href="/css-atual/style.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/Oficial.gif">
+    <script src="/js/Requisicoes/Header/header.js" defer></script>
 </head>
 <body>
-    <header class="header"></header>
+  <x-header/>
     <section id="sectionForms">
-      <a href="painelPerfilAdm.html" id="volteInicio">Início</a>
+      <a href="/admin" id="volteInicio">Início</a>
         <div id="forms">
           <div class="titleForms">Cadastrar Produto</div>
           <input
