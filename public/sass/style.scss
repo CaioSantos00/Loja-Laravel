@@ -1,0 +1,172 @@
+//Impotações ||
+//           \/
+//Priemira página do site
+@import "./pages/video.scss";
+@import "./mixins/mixinsBtns.scss";
+@import "./variaveis.scss";
+@import "./components/global.scss";
+@import "./pages/anuncio.scss";
+@import "./pages/inicio.scss";
+@import "./pages/perfil.scss";
+@import "./mediaQueries/painelPerfil.scss";
+@import "./pages/telaPedidos.scss";
+@import "./pages/carrinho.scss";
+@import "./pages/telaErrorAdm.scss";
+@import "./pages/fimCarrinho.scss";
+/*
+@import "./pages/detailsPedido.scss";
+@import "./pages/detailsMensagens.scss";
+@import "./pages/detailsPedido.scss";
+@import "./pages/forms.scss";
+@import "./pages/formsUser.scss";
+@import "./pages/editarEndereco.scss";
+
+@import "./pages/cadasterProduct.scss";
+@import "./pages/consultaProduct.scss";
+@import "./pages/cadasterVariation.scss";
+@import "./pages/consultaClass.scss";
+@import "./pages/consultaVaris.scss";
+@import "./mediaQueries/telaPedidos.scss";
+@import "./mediaQueries/detailsPedido.scss";
+@import "./mediaQueries/detailsMensagens.scss";
+*/
+
+// Media Queries
+
+@import "./mediaQueries/inicio.scss";
+
+//Fim das importações
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(31,31,31);
+    background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%);
+    /*background-image: url('../imgs/f4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    color: $corPrimaria;
+}
+
+main {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $corSecundaria;
+    border-radius: 10px;
+  }
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 3vw;
+}
+
+#logo {
+    width: 140px;
+}
+
+nav {
+    transform: translateY(-100%);
+    transition: transform 1s;
+}
+
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: $corSecundaria;
+    li {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+    li a {
+        text-transform: uppercase;
+        font-size: 1.4em;
+        margin: 2px 0px;
+        color: $corPrimaria;
+    }
+}
+
+#redes {
+    margin: 0px 0px 10px;
+    display: grid;
+    grid-template-areas: 'cadaRede cadaRede cadaRede';
+}
+
+.cadaRede {
+    display: flex;
+    justify-content: center;
+    border: 1px solid $corPrimaria;
+    padding: 10px;
+}
+
+#searchAndCar {
+display: flex;
+align-items: center;
+}
+
+#divRemoveMenu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+#volteInicio {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    color: $corPrimaria;
+}
+
+#removeMenu {
+    width: 30px;
+    height: 30px;
+}
+
+.btnsMenu {
+    @include btnsMenu();
+}
+
+section {
+    margin: 5% 0%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: $corSecundaria;
+}
+
+@media screen and (max-width: 670px) {
+    #logo {
+        width: 100px;
+    }
+    .navMenu {
+        width: 100%;
+    }
+}

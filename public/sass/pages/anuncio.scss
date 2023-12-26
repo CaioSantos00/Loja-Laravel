@@ -1,0 +1,95 @@
+#caixaAnuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+    margin: auto;
+}
+
+#holdAddSacoDescri {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#fotosAnuncio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#infoAnuncio {
+    width: 500px;
+}
+
+.imgsAnuncio {
+    width: 450px;
+    height: 450px;
+}
+
+#divSize {
+    margin: 1% 0%;
+    button {
+        padding: 5px 10px;
+    }
+}
+
+#description {
+    transition: .4s;
+    visibility: hidden;
+    transform: translateY(100%);
+    margin: 1% 0%;
+}
+
+#divBoxDescri {text-align: center;
+    height: 20px;
+}
+
+#divSaco {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+@media screen and (max-width: 1115px) {
+    #caixaAnuncio {
+        flex-wrap: wrap;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #caixaAnuncio {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #caixaAnuncio {
+        width: 300px;
+        gap: 30px;
+
+    }
+    
+    #fotosAnuncio {
+        width: 300px;
+    }
+    .imgsAnuncio {
+        width: 250px;
+        height: 250px;
+    }
+    .btnDireEsquer {
+        width: 23px;
+        height: 23px;
+    }
+    
+    .titleAnun {
+        font-size: 1.3em;
+    }
+    
+#description {
+    font-size: 1em;
+}
+
+}

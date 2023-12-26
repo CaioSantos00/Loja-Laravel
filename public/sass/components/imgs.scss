@@ -1,0 +1,15 @@
+.imgCar {
+    width: 150px;
+}
+
+@media screen and (max-width: 440px){
+    .imgCar {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .imgCar {
+        width: 80px;
+    }
+}

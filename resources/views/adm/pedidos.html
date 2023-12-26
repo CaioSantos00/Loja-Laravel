@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../css-atual/style.css">
+     <link rel="icon" type="image/x-icon" href="../imgs/Oficial.gif">
+     <script src="../js/Requisicoes/requisicaoHeader/header.js" defer></script>
+</head>
+<body>
+    <header class="header"></header>
+    <section>
+        <a href="painelPerfilAdm.html" id="volteInicio">Início</a>
+        <div id="divInputConsul">
+            <input type="text" placeholder="Nome do Cliente" class="inputsConsultas"><button class="btnsBorders">Buscar</button>
+        </div>
+        <div id="containerCard">
+            <div class="cardPedido">
+                <div >Cliente: <span>Caio Santos</span></div>
+                <div >Número do Pedido: <span>55</span></div>
+                <div >Data do Pedido: <span>11/11/1111</span></div>
+                <div class="situacaoPedido">Status: <div class="bolinhaStatusVerde"></div><span>Pedido Enviado</span></div>
+                <a href="pedidosDetalhes.html"><button class="btnsBorders">Mais Detalhes</button></a>
+            </div>
+            <div class="cardPedido">
+                <div >Cliente: <span>Caio Santos</span></div>
+                <div >Número do Pedido: <span>55</span></div>
+                <div >Data do Pedido: <span>11/11/1111</span></div>
+                <div class="situacaoPedido">Status: <div class="bolinhaStatusRed"></div><span>A caminho</span></div>
+                <a href="pedidosDetalhes.html"><button class="btnsBorders">Mais Detalhes</button></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

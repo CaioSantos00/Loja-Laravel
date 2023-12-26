@@ -1,0 +1,19 @@
+.cardsProductsCar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $corSecundaria;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.infosProducts {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 340px){
+    .infos {
+        font-size: 0.9em;
+    }
+}
