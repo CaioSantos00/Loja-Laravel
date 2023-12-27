@@ -12,19 +12,18 @@
 </head>
 
 <body>
-<x-header/> 
+    <x-header/>
     <main>
     <section id="sectionForms">
+        
+        <a href="/admin" id="volteInicio">Início</a>
         <form action="" id="forms">
-            <div class="titleForms">Cadastre-se</div>
+            <div class="titleForms">Minha Conta</div>
             <input type="text" placeholder="Digite seu Email" class="inputs">
             <input type="text" placeholder="Digite sua senha" class="inputs">
-            <input type="text" placeholder="Digite seu telefone" class="inputs">            
+            <input type="text" placeholder="Digite seu telefone" class="inputs">
             <input type="text" placeholder="Digite seu CPF" class="inputs">
-            <button class="btnsBordersBottomLess">Cadastrar</button>
-            <div id="possuiContaDiv">
-                Já possui uma conta ? <a href="/entrar">Entre</a>
-            </div>
+            <button class="btnsConfirm">Salvar</button> 
         </form>
     </section>
 </main>

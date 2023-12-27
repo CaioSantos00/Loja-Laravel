@@ -73,3 +73,16 @@ Route::get('/admin/minhaconta', function () {
 Route::get('/admin/error', function () {
     return view('adm/errorAdm');
 });
+
+Route::get('/perfil', function () {
+    return view('user/perfil');
+});
+
+Route::get('/perfil/minhaconta', function () {
+    return view('user/minhaConta');
+});
+
+
+Route::get('/perfil/enderecos', function () {
+    return view('user/enderecos');
+});
