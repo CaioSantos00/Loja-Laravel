@@ -82,7 +82,10 @@ Route::get('/perfil/minhaconta', function () {
     return view('user/minhaConta');
 });
 
-
 Route::get('/perfil/enderecos', function () {
     return view('user/enderecos');
+});
+
+Route::get('/perfil/minhascompras', function () {
+    return view('user/myCompras');
 });
