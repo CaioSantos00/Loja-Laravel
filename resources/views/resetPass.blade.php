@@ -15,15 +15,11 @@
 <main>
     <section id="sectionForms">
         <form action="" id="forms">
-            <div class="titleForms">Login</div>
-            <input type="text" placeholder="Digite seu Email" class="inputs">
-            <input type="text" placeholder="Digite sua senha" class="inputs">
-            <button class="btnsBordersBottomLess">Entrar</button>
-            <div id="possuiContaDiv">
-								Não possui uma conta ? <a href="/cadastrar">Cadastre-se</a>
-								<br>
-								<span id="senhaEsque"><a href="/emailvalido">Esqueceu sua senha ?</a></span>
-							</div>                 
+            <div class="titleForms">Resetar senha</div>
+            <input type="email" placeholder="Email" class="inputs">
+            <input type="password" placeholder="Digite sua nova senha" class="inputs">
+            <input type="password" placeholder="Confirme sua senha" class="inputs">
+            <button class="btnsBordersBottomLess">Alterar senha</button>           
         </form>
     </section>
 </main>

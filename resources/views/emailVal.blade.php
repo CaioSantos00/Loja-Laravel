@@ -15,15 +15,10 @@
 <main>
     <section id="sectionForms">
         <form action="" id="forms">
-            <div class="titleForms">Login</div>
+            <div class="titleForms">Esqueceu sua Senha ?</div>
+            Digite um email válido para recuperação de senha.
             <input type="text" placeholder="Digite seu Email" class="inputs">
-            <input type="text" placeholder="Digite sua senha" class="inputs">
-            <button class="btnsBordersBottomLess">Entrar</button>
-            <div id="possuiContaDiv">
-								Não possui uma conta ? <a href="/cadastrar">Cadastre-se</a>
-								<br>
-								<span id="senhaEsque"><a href="/emailvalido">Esqueceu sua senha ?</a></span>
-							</div>                 
+            <button class="btnsBordersBottomLess">Enviar</button>            
         </form>
     </section>
 </main>

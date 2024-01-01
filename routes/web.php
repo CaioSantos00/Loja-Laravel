@@ -89,3 +89,11 @@ Route::get('/perfil/enderecos', function () {
 Route::get('/perfil/minhascompras', function () {
     return view('user/myCompras');
 });
+
+Route::get('/emailvalido', function () {
+    return view('emailVal');
+});
+
+Route::get('/resetarsenha', function () {
+    return view('resetPass');
+});
