@@ -732,6 +732,64 @@ textarea {
   border-radius: 8px;
 }
 
+#formProduct {
+  width: 350px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
+}
+#formProduct a {
+  color: rgb(255, 255, 255);
+}
+
+#tamanhos, #cores {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.holdCardsTam {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(90, 90, 90, 0.35);
+  border-radius: 5px;
+  padding: 5px;
+}
+.holdCardsTam input {
+  width: 100%;
+}
+
+.divHoldCheck {
+  display: flex;
+}
+.divHoldCheck input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/*.holdCardsTam {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: $corCards;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.divTamPreco {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    input {
+        width: 100%;
+    }
+}*/
 /*
 @import "./pages/detailsPedido.scss";
 @import "./pages/detailsMensagens.scss";
