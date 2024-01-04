@@ -27,6 +27,15 @@
     margin-top: 4px;
 }
 
+.bolinhaStatusManga {
+    width: 10px;
+    height: 10px;
+    background-color: $bolinhaStatusManga;
+    border-radius: 100%;
+    box-shadow: 0px 0px 3px 1px $bolinhaStatusManga;
+    margin-top: 4px;
+}
+
 .situacaoPedido {
     display: flex;
     align-items: center;

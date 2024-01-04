@@ -16,20 +16,10 @@
             <input type="text" placeholder="Nome do Cliente" class="inputsConsultas"><button class="btnsBorders">Buscar</button>
         </div>
         <div id="containerCard">
-            <div class="cardPedido">
-                <div >Cliente: <span>Caio Santos</span></div>
-                <div >Número do Pedido: <span>55</span></div>
-                <div >Data do Pedido: <span>11/11/1111</span></div>
-                <div class="situacaoPedido">Status: <div class="bolinhaStatusVerde"></div><span>Pedido Enviado</span></div>
-                <a href="/admin/detalhespedido"><button class="btnsBorders">Mais Detalhes</button></a>
-            </div>
-            <div class="cardPedido">
-                <div >Cliente: <span>Caio Santos</span></div>
-                <div >Número do Pedido: <span>55</span></div>
-                <div >Data do Pedido: <span>11/11/1111</span></div>
-                <div class="situacaoPedido">Status: <div class="bolinhaStatusRed"></div><span>A caminho</span></div>
-                <a href="/admin/detalhespedido"><button class="btnsBorders">Mais Detalhes</button></a>
-            </div>
+            <x-cardpedido :nomeCliente="'Caio'" :numeroPedido="1" :dataPedido="'04/01/2024'" :status="'A fazer'" :elementoStatus="'bolinhaStatusRed'"/>
+            <x-cardpedido :nomeCliente="'Caio'" :numeroPedido="1" :dataPedido="'04/01/2024'" :status="'A caminho'" :elementoStatus="'bolinhaStatusManga '"/>
+            <x-cardpedido :nomeCliente="'Caio'" :numeroPedido="1" :dataPedido="'04/01/2024'" :status="'Entregue'" :elementoStatus="'bolinhaStatusVerde '"/>
+
         </div>
     </section>
 </body>
