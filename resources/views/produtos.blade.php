@@ -17,43 +17,13 @@
 <main>
     <section>
         <div id="containerCard">
-           <a class="aCard" href="/produto"><div class="cardsProdu">
-                <div class="divImgsProdu">
-                    <img src="/imgs/camFrenteL.png" class="imgsProdu" alt="">
-                </div>
-                <div class="containerInfosInit">
-                    <div class="namePeca">Nome do produto</div>
-                    <div class="precoPeca">R$0000.00</div>
-                </div>
-            </div></a>
-           
-            <a class="aCard" href=""><div class="cardsProdu">
-                <div class="divImgsProdu">
-                    <img src="/imgs/IMG_5136.PNG" class="imgsProdu" alt="">
-                </div>
-                <div class="containerInfosInit">
-                    <div class="namePeca">Nome do produto</div>
-                    <div class="precoPeca">R$0000.00</div>
-                </div>
-            </div></a>
-            <a class="aCard" href=""><div class="cardsProdu">
-                <div class="divImgsProdu">
-                    <img src="/imgs/IMG_5137.PNG" class="imgsProdu" alt="">
-                </div>
-                <div class="containerInfosInit">
-                    <div class="namePeca">Nome do produto</div>
-                    <div class="precoPeca">R$0000.00</div>
-                </div>
-            </div></a>
-            <a class="aCard" href=""><div class="cardsProdu">
-                <div class="divImgsProdu">
-                    <img src="/imgs/IMG_5138.PNG" class="imgsProdu" alt="">
-                </div>
-                <div class="containerInfosInit">
-                    <div class="namePeca">Nome do produto</div>
-                    <div class="precoPeca">R$0000.00</div>
-                </div>
-            </div></a>
+            <x-card-produto :img="'/imgs/camFrenteL.png'" :nome="'Nome do produto'" :preco="'R$100.00'" />
+            <x-card-produto :img="'/imgs/IMG_5136.PNG'" :nome="'Nome do produto'" :preco="'R$100.00'" />
+            <x-card-produto :img="'/imgs/IMG_5137.PNG'" :nome="'Nome do produto'" :preco="'R$0000.00'" />
+            <x-card-produto :img="'/imgs/IMG_5138.PNG'" :nome="'Bermuda'" :preco="'R$100.00'" />
+            <x-card-produto :img="'/imgs/frentebranca.png'" :nome="'Camiseta Branca'" :preco="'R$100.00'" />
+            <x-card-produto :img="'/imgs/rosafrente.png'" :nome="'Camiseta Rosa'" :preco="'R$100.00'" />
+            <x-card-produto :img="'/imgs/vemelhafrente.png'" :nome="'Camiseta Vermelha'" :preco="'R$100.00'" />
         </div>
     </section>
     <div id="loading">

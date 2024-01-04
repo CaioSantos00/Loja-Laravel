@@ -56,7 +56,3 @@
       </section>
 </body>
 </html>
-
-<!--<script type="application/x-javascript" defer>
-  
-</scrip>-->
