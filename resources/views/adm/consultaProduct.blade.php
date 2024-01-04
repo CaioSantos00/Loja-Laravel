@@ -16,46 +16,9 @@
             <input type="text" placeholder="Nome do produto" class="inputsConsultas"><button class="btnsBorders">Buscar</button>
         </div>
         <div id="containerCard">
-                <div class="cardsProdu">
-                    <div class="divImgsProdu">
-                        <img src="../imgs/camFrenteL.png" class="imgsProdu" alt="">
-                    </div>
-                    <div class="containerInfosInit">
-                        <div class="namePeca">Nome do produto</div>
-                        <div class="precoPeca">R$0000.00</div>
-                        <div class="divEditExclu"><button class="btnsCancel">Excluir</button><button class="btnsConfirm">Editar</button></div>
-                    </div>
-                </div>
-                <div class="cardsProdu">
-                    <div class="divImgsProdu">
-                        <img src="../imgs/camFrenteL.png" class="imgsProdu" alt="">
-                    </div>
-                    <div class="containerInfosInit">
-                        <div class="namePeca">Nome do produto</div>
-                        <div class="precoPeca">R$0000.00</div>
-                        <div class="divEditExclu"><button class="btnsCancel">Excluir</button><button class="btnsConfirm">Editar</button></div>
-                    </div>
-                </div>
-                <div class="cardsProdu">
-                    <div class="divImgsProdu">
-                        <img src="../imgs/camFrenteL.png" class="imgsProdu" alt="">
-                    </div>
-                    <div class="containerInfosInit">
-                        <div class="namePeca">Nome do produto</div>
-                        <div class="precoPeca">R$0000.00</div>
-                        <div class="divEditExclu"><button class="btnsCancel">Excluir</button><button class="btnsConfirm">Editar</button></div>
-                    </div>
-                </div>
-                <div class="cardsProdu">
-                    <div class="divImgsProdu">
-                        <img src="../imgs/camFrenteL.png" class="imgsProdu" alt="">
-                    </div>
-                    <div class="containerInfosInit">
-                        <div class="namePeca">Nome do produto</div>
-                        <div class="precoPeca">R$0000.00</div>
-                        <div class="divEditExclu"><button class="btnsCancel">Excluir</button><button class="btnsConfirm">Editar</button></div>
-                    </div>
-                </div>
+                <x-cardprodutobusca :img="'/imgs/camFrenteL.png'" :nome="'Nome do produto'" :preco="'R$100.00'" />
+                <x-cardprodutobusca :img="'/imgs/camFrenteL.png'" :nome="'Nome do produto'" :preco="'R$100.00'" />
+                <x-cardprodutobusca :img="'/imgs/camFrenteL.png'" :nome="'Nome do produto'" :preco="'R$100.00'" />
         </div>
     </section>
 </body> 
