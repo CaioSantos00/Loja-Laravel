@@ -13,43 +13,44 @@
   <x-header/>
     <section id="sectionForms">
       <a href="/admin" id="volteInicio">Início</a>
-      <form id="formProduct" method="POST">
-      
+      <form id="formProduct" method="POST" enctype="multipart/form-data">
+      @csrf
       <div class="titleForms">Cadastrar Produto</div>
       <label>
         Produto disponível ?
-        <input type="checkbox" name="availability">
+        <input type="checkbox" name="availability" value="1" @checked(old('availability') !== null)>
     </label>
-    <input class="inputs" type="text" name="name" placeholder="Nome do produto" required>
-    <textarea class="inputs" name="description" placeholder="Descrição do produto" required></textarea>
+    <input class="inputs" type="text" name="name" placeholder="Nome do produto" required value="{{ old('name') }}">
+    <textarea class="inputs" name="description" placeholder="Descrição do produto" required>
+    {{ old('description') }}
+    </textarea>
     <input class="inputFile inputs" type="file" name="pictures[]" multiple required>
     <button id="maisCor" class="btnsBordersBottomLess">Adicionar cor</button>
     <div id="cores">
+    @if(old('cor'))
+        @foreach(old("cor") as $indiceCor => $dadosCor)
+        <!--
+        NÃO APAGAR OS COMENTS
         <div class="holdCardsTam">
             <input class="inputs" type="text" name="cor[]" placeholder="cor">
             <div class="divHoldCheck"><input class="inputs" type="checkbox" name="disponibilidadeCor[]" placeholder="Disponibilidade"></div>
-        </div>
+        </div>-->
+        @endforeach
+    @endif
     </div>
     <button id="maisTamanho" class="btnsBordersBottomLess">Adicionar Tamanho</button>
     <div id="tamanhos">
+    @if(old('tamanho'))  
+        @foreach(old('tamanho') as $indiceTamanho => $dadosTamanho)
+     <!-- 
+      NÃO APAGAR OS COMENTS
       <div class="holdCardsTam">
         <input class="inputs" type="text" name="tamanho[]" placeholder="Tamanho">
         <input class="inputs" type="text" name="preco[]" placeholder="Preco">
         <div class="divHoldCheck"><input class="checkboxs" type="checkbox" name="disponibilidadeCor[]" placeholder="Disponibilidade"></div>
-      </div>
-
-      <!--<div class="holdCardsTam">
-        <div class="divTamPreco">
-            <input class="inputs" type="text" name="tamanho[]" placeholder="Tamanho">
-            <input class="inputs" type="text" name="preco[]" placeholder="Preco">
-        </div>
-        <button class="btnsConfirm">
-            <label>
-                Disponível 
-                <input type="checkbox" class="checkDisIndis" name="availability">
-            </label>
-        </button>
       </div>-->
+      @endforeach
+    @endif
     </div>
     <input type="submit" name="submit" class="btnsBorders" value="Cadastrar">
 </form>

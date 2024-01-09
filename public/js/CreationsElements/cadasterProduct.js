@@ -6,18 +6,26 @@ btnMaisTamanho=document.getElementById('maisTamanho');
 btnMaisCor.addEventListener('click', () => {
     let divHoldCardsCor = document.createElement('div')
     divHoldCardsCor.classList.add('holdCardsTam')
-    let inputCor = document.createElement('input')
-    inputCor.classList.add('inputs')
-    inputCor.type = 'text'
-    inputCor.placeholder = 'Cor'
-    inputCor.name = 'cor[]'
+    let inputTextCor = document.createElement('input')
+    inputTextCor.classList.add('inputs')
+    inputTextCor.type = 'text'
+    inputTextCor.placeholder = 'Cor'
+    inputTextCor.name = 'cor[{{ $indiceCor }}][cor]'
+    inputTextCor.value = "{{ $dadosCor['cor'] }}"
+    let inputColor = document.createElement('input')
+    inputColor.type = 'color'
+    inputColor.classList.add('inputCor')
+    inputColor.name = 'cor[{{ $indiceCor }}][corHexa]'
+    inputColor.value = "{{ $dadosCor['corHexa'] }}"
+
     let divHoldCheck = document.createElement('div')
     divHoldCheck.classList.add('divHoldCheck')
     let inputDis = document.createElement('input')
     inputDis.type = 'checkbox'
-    inputDis.name = 'disponibilidadeCor[]'
+    inputDis.name = "cor[{{ $indiceCor }}][check]"
+
     divHoldCheck.append(inputDis)
-    divHoldCardsCor.append(inputCor, divHoldCheck)
+    divHoldCardsCor.append(inputColor, inputTextCor, divHoldCheck)
     divCores.append(divHoldCardsCor)
 })
 
@@ -28,17 +36,19 @@ btnMaisTamanho.addEventListener('click', () => {
     inputTam.classList.add('inputs')
     inputTam.type = 'text'
     inputTam.placeholder = 'Tamanho'
-    inputTam.name = 'tamanho[]'
+    inputTam.name = '"tamanho[{{ $indiceTamanho }}][tamanho]"'
+    inputTam.value = "{{ $dadosTamanho['tamanho'] }}"
     let inputPreco = document.createElement('input')
     inputPreco.classList.add('inputs')
     inputPreco.type = 'text'
     inputPreco.placeholder = 'Preço'
-    inputPreco.name = 'preco[]'
+    inputPreco.name = "tamanho[{{ $indiceTamanho }}][preco]"
+    inputPreco.value = "{{ $dadosTamanho['preco'] }}"
     let divHoldCheck = document.createElement('div')
     divHoldCheck.classList.add('divHoldCheck')
     let inputDis = document.createElement('input')
     inputDis.type = 'checkbox'
-    inputDis.name = 'disponibilidadeCor[]'
+    inputDis.name = "tamanho[{{ $indiceTamanho }}][check]"
     divHoldCheck.append(inputDis)
     divHoldCardsCor.append(inputTam, inputPreco,divHoldCheck)
     divTamanhos.append(divHoldCardsCor)

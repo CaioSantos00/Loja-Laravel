@@ -2,13 +2,9 @@
 //           \/
 //Priemira página do site
 @import "./pages/video.scss";
-@import "./mixins/mixinsBtns.scss";
-@import "./variaveis.scss";
-@import "./components/global.scss";
 @import "./pages/anuncio.scss";
 @import "./pages/inicio.scss";
 @import "./pages/perfil.scss";
-@import "./mediaQueries/painelPerfil.scss";
 @import "./pages/telaPedidos.scss";
 @import "./pages/carrinho.scss";
 @import "./pages/telaErrorAdm.scss";
@@ -16,26 +12,14 @@
 @import "./pages/myCompras.scss";
 @import "./pages/cadasterProduct.scss";
 
-/*
-@import "./pages/detailsPedido.scss";
-@import "./pages/detailsMensagens.scss";
-@import "./pages/detailsPedido.scss";
-@import "./pages/forms.scss";
-@import "./pages/formsUser.scss";
-@import "./pages/editarEndereco.scss";
-
-@import "./pages/cadasterProduct.scss";
-@import "./pages/consultaProduct.scss";
-@import "./pages/cadasterVariation.scss";
-@import "./pages/consultaClass.scss";
-@import "./pages/consultaVaris.scss";
-@import "./mediaQueries/telaPedidos.scss";
-@import "./mediaQueries/detailsPedido.scss";
-@import "./mediaQueries/detailsMensagens.scss";
-*/
+//
+@import "./mixins/mixinsBtns.scss";
+@import "./variaveis.scss";
+@import "./components/global.scss";
 
 // Media Queries
 
+@import "./mediaQueries/painelPerfil.scss";
 @import "./mediaQueries/inicio.scss";
 
 //Fim das importações
