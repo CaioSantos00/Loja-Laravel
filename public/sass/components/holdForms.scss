@@ -1,0 +1,33 @@
+#sectionForms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#forms {
+    width: 350px;
+    padding:  8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $corSecundaria;
+    gap:10px;
+    text-align: center;
+    a {
+        color: $corPrimaria;
+    }
+}
+
+@media screen and (max-width: 395px){
+    #forms {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    #forms {
+        width: 280px;
+    }
+}

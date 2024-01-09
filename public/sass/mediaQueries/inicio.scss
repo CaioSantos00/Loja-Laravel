@@ -1,0 +1,36 @@
+
+@media (max-width:1115px) {
+    #containerCard { 
+        grid-template-areas: 'cardsProdu cardsProdu ';
+    }
+}
+
+
+@media (max-width: 664px) {
+    /*svg {
+        width: 25px;
+        height: 25px;
+    }*/
+    #containerCard { 
+        grid-template-areas: 'cardsProdu cardsProdu';
+        gap: 10px;
+    }
+    .cardsProdu {
+        width: 150px;
+        padding: 0px;
+    }
+    
+    .divImgsProdu {
+        width: 150px;
+    }
+    
+    .imgsProdu {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .containerInfosInit {
+        font-size: 0.9em;
+        text-align: center;
+    }
+}

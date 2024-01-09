@@ -1,0 +1,47 @@
+#sectionDetails {
+    margin: 20px 280px;
+}
+
+.titleDetalhes {
+    padding: 10px;
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+}
+
+#divAlgumasInfos {
+    display: grid;
+    grid-template-areas: 'boxPrima boxSecond';
+}
+
+.borderBoxs {
+    padding: 10px;
+    border: 1px solid $corFormsUser;
+}
+
+#detalhesCarrinho {
+    margin-top: 20px;
+}
+
+#holdInfosCar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+#finalizarPedido {
+    @include buttons(1em, $btnsConfirm, $corSecundaria);
+    border: none;
+    width: 100%;
+    &:hover {
+        background-color: rgb(34, 161, 34);
+    }
+}
+
+#precoTotal {
+    box-shadow: 0px 0px 10px 2px $corFormsUser;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 8px;
+    font-size: 1.3em;
+}

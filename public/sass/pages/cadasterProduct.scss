@@ -1,0 +1,62 @@
+#formProduct {
+    width: 350px;
+    padding:  8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $corSecundaria;
+    gap:10px;
+    a {
+        color: $corPrimaria;
+    }
+}
+
+#tamanhos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#cores {
+    @extend #tamanhos;
+}
+
+.holdCardsTam {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: $corCards;
+    border-radius: 5px;
+    padding: 5px;
+    input {
+        width: 100%;
+    }
+}
+
+.divHoldCheck {
+    display: flex;
+    input {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+}
+
+/*.holdCardsTam {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: $corCards;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.divTamPreco {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    input {
+        width: 100%;
+    }
+}*/

@@ -1,0 +1,57 @@
+#boxInfosPerfil {
+    width: 300px;
+    margin: auto;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+}
+
+#infos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#imgPerfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: $corSecundaria;
+}
+
+#emailPerfil {
+    font-size: 0.9em;
+}
+
+#divFerramentas {
+    margin: 20px 0px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 'cardsFerramentas cardsFerramentas cardsFerramentas';
+    gap: 10px;
+}
+
+.cardsFerramentas {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $corSecundaria;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    a {
+        color: $corPrimaria;
+        margin-top: 5px;
+        background-color: rgb(13, 13, 13);
+    }
+}
+
+.divSvg {
+    display: flex;
+    justify-content: center;
+}

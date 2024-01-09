@@ -1,0 +1,43 @@
+#sectionDetails {
+    margin: 20px 200px;
+}
+
+.titleDetalhes {
+    padding: 10px;
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+}
+
+#holdInfosCar {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#divAlgumasInfos {
+    display: grid;
+    grid-template-areas: 'boxPrima boxSecond';
+}
+
+#precoTotal {
+    margin: 10px;
+}
+
+@media screen and (max-width: 1115px){
+    #sectionDetails {
+        margin: 20px 100px;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    #sectionDetails {
+        margin: 20px 20px;
+    } 
+}
+
+@media screen and (max-width: 440px){
+    #sectionDetails {
+        margin: 20px 10px;
+    } 
+}
