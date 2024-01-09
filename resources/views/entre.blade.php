@@ -13,17 +13,26 @@
    
 <x-header/> 
 <main>
+    <ul>
+        {{ session('status') ?? "" }}
+            
+    </ul>
     <section id="sectionForms">
-        <form action="" id="forms">
+        <form action="{{ route('login') }}" id="forms" method="post">
+            @csrf
             <div class="titleForms">Login</div>
             <input type="text" placeholder="Digite seu Email" class="inputs">
             <input type="text" placeholder="Digite sua senha" class="inputs">
+            <label><input type="checkbox" name="remember"> lembrar de mim</label>
             <button class="btnsBordersBottomLess">Entrar</button>
+            @if (Route::has('password.request'))
+                <a href="{{ route('password.request') }}">esqueceu a senha?</a>
+            @endif
             <div id="possuiContaDiv">
-								Não possui uma conta ? <a href="/cadastrar">Cadastre-se</a>
-								<br>
-								<!--<span id="senhaEsque"><a href="">Esqueceu sua senha ?</a></span>-->
-							</div>                 
+                Não possui uma conta ? <a href="/cadastrar">Cadastre-se</a>
+                <br>
+                <!--<span id="senhaEsque"><a href="">Esqueceu sua senha ?</a></span>-->
+            </div>                 
         </form>
     </section>
 </main>
