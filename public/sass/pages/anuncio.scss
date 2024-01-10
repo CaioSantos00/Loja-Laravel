@@ -28,11 +28,18 @@
     height: 450px;
 }
 
-#divSize {
-    margin: 1% 0%;
+.divSize {
+    margin: 1%;
     button {
         padding: 5px 10px;
     }
+}
+
+#divColorsDis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 1%;
 }
 
 #description {

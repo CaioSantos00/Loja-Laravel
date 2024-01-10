@@ -34,12 +34,30 @@
                 <div id="divPreco">Preço: R$100,00</div>
                 <div class="riscoQuebra"></div>
                 <div id="size" class="titleAnun">Tamanho</div>
+<<<<<<< Updated upstream
                 <div id="divSize">
                     @foreach($product->sizes as $size)
                         <button class="btnsBordersBottomLess" data-tamanho="{{$size->size}}">
                             {{ $size->size }}
                         </button>
                     @endforeach                    
+=======
+                <div class="divSize">
+                    <button class="btnsBordersBottomLess">PP</button>
+                    <button class="btnsBordersBottomLess">P</button>
+                    <button class="btnsBordersBottomLess">M</button>
+                    <button class="btnsBordersBottomLess">G</button>
+                    
+                </div>
+                
+                <div class="riscoQuebra"></div> 
+                <div id="divColorsDis">
+                    <button class="btnsColorProduct"><div class="qualCor"></div>Azul</button>
+                    <button class="btnsColorProduct"><div class="qualCor"></div>Vermelho</button>
+                    <button class="btnsColorProduct"><div class="qualCor"></div>Preto</button>
+                    <button class="btnsColorProduct"><div class="qualCor"></div>Azul Royal</button>
+                    
+>>>>>>> Stashed changes
                 </div>
                 <div class="riscoQuebra"></div> 
                 <div id="holdAddSacoDescri">

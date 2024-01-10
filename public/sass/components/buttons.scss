@@ -55,3 +55,23 @@
         background-color: $corHoverSemDes;
     }
 }
+
+.btnsColorProduct {
+    display: flex; 
+    align-items: center;
+    gap: 4px;
+    @include buttons(1em, transparent, $corPrimaria);
+    border: 1px solid $corPrimaria;
+    &:hover {
+        background-color: $corPrimaria;
+        color: $corSecundaria;
+    }
+}
+
+
+.qualCor {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: aqua;
+}

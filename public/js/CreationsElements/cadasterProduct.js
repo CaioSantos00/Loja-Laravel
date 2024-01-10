@@ -11,12 +11,11 @@ btnMaisCor.addEventListener('click', () => {
     inputTextCor.type = 'text'
     inputTextCor.placeholder = 'Cor'
     inputTextCor.name = 'cor[{{ $indiceCor }}][cor]'
-    inputTextCor.value = "{{ $dadosCor['cor'] }}"
+
     let inputColor = document.createElement('input')
     inputColor.type = 'color'
     inputColor.classList.add('inputCor')
     inputColor.name = 'cor[{{ $indiceCor }}][corHexa]'
-    inputColor.value = "{{ $dadosCor['corHexa'] }}"
 
     let divHoldCheck = document.createElement('div')
     divHoldCheck.classList.add('divHoldCheck')
@@ -37,13 +36,11 @@ btnMaisTamanho.addEventListener('click', () => {
     inputTam.type = 'text'
     inputTam.placeholder = 'Tamanho'
     inputTam.name = '"tamanho[{{ $indiceTamanho }}][tamanho]"'
-    inputTam.value = "{{ $dadosTamanho['tamanho'] }}"
     let inputPreco = document.createElement('input')
     inputPreco.classList.add('inputs')
     inputPreco.type = 'text'
     inputPreco.placeholder = 'Preço'
     inputPreco.name = "tamanho[{{ $indiceTamanho }}][preco]"
-    inputPreco.value = "{{ $dadosTamanho['preco'] }}"
     let divHoldCheck = document.createElement('div')
     divHoldCheck.classList.add('divHoldCheck')
     let inputDis = document.createElement('input')

@@ -23,326 +23,6 @@
   color: rgb(255, 255, 255);
 }
 
-.btnsBorders {
-  width: 100%;
-  font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-}
-.btnsBorders:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsBorders:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-.btnsBordersBottomLess {
-  font-size: 1em;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-}
-.btnsBordersBottomLess:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsBordersBottomLess:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.btnDireEsquer {
-  display: flex;
-  align-items: center;
-  border: 1px solid rgb(255, 255, 255);
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  width: 30px;
-  height: 30px;
-}
-
-.btnsCancel {
-  font-size: 0.9em;
-  background-color: rgb(255, 111, 111);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsCancel:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsCancel:hover {
-  background-color: red;
-}
-
-.btnsConfirm {
-  font-size: 0.9em;
-  background-color: rgb(93, 248, 93);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsConfirm:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsConfirm:hover {
-  background-color: rgb(17, 218, 17);
-}
-
-.btnBlack {
-  font-size: 1em;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-.btnBlack:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnBlack:hover {
-  background-color: rgb(44, 44, 44);
-}
-
-.title {
-  font-size: 1.3em;
-}
-
-.titleForms {
-  font-size: 1.6em;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-.titleBorders {
-  background-color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.inputFile {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.inputFile::file-selector-button {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-textarea {
-  resize: none;
-  height: 160px;
-}
-
-.inputs {
-  border-radius: 5px;
-  padding: 5px;
-  border: none;
-}
-
-#sectionForms {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#forms {
-  width: 350px;
-  padding: 8px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgb(0, 0, 0);
-  gap: 10px;
-  text-align: center;
-}
-#forms a {
-  color: rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 395px) {
-  #forms {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 330px) {
-  #forms {
-    width: 280px;
-  }
-}
-#sectionProduct .cardsProdu {
-  background-color: black;
-  border-radius: 8px;
-}
-
-#divInputConsul {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  padding: 0px 15px;
-}
-#divInputConsul button {
-  width: 80px;
-}
-
-.inputsConsultas {
-  width: 100%;
-  border-radius: 5px;
-  padding: 3px;
-  border: none;
-}
-
-.divEditExclu {
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.divEditExclu button {
-  width: 50%;
-}
-
-#sectionDetails {
-  margin: 20px 200px;
-}
-
-.titleDetalhes {
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-#holdInfosCar {
-  margin: 15px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#divAlgumasInfos {
-  display: grid;
-  grid-template-areas: "boxPrima boxSecond";
-}
-
-#precoTotal {
-  margin: 10px;
-}
-
-@media screen and (max-width: 1115px) {
-  #sectionDetails {
-    margin: 20px 100px;
-  }
-}
-@media screen and (max-width: 600px) {
-  #sectionDetails {
-    margin: 20px 20px;
-  }
-}
-@media screen and (max-width: 440px) {
-  #sectionDetails {
-    margin: 20px 10px;
-  }
-}
-.cardsProductsCar {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 8px;
-  align-items: center;
-}
-
-.infosProducts {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 340px) {
-  .infos {
-    font-size: 0.9em;
-  }
-}
-.imgCar {
-  width: 150px;
-}
-
-@media screen and (max-width: 440px) {
-  .imgCar {
-    width: 100px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .imgCar {
-    width: 80px;
-  }
-}
-.riscoQuebra {
-  margin: 2% 0%;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-}
-
-.divBoxDescri {
-  padding: 5px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.borderBoxs {
-  padding: 10px;
-  border: 1px solid rgb(63, 63, 63);
-}
-
 #caixaAnuncio {
   display: flex;
   justify-content: center;
@@ -373,11 +53,18 @@ textarea {
   height: 450px;
 }
 
-#divSize {
-  margin: 1% 0%;
+.divSize {
+  margin: 1%;
 }
-#divSize button {
+.divSize button {
   padding: 5px 10px;
+}
+
+#divColorsDis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 1%;
 }
 
 #description {
@@ -537,16 +224,6 @@ textarea {
   justify-content: center;
 }
 
-@media screen and (max-width: 740px) {
-  #divFerramentas {
-    grid-template-areas: "cardsFerramentas";
-  }
-}
-@media screen and (max-width: 330px) {
-  #boxInfosPerfil {
-    width: 280px;
-  }
-}
 .cardPedido {
   width: 250px;
   background-color: rgb(0, 0, 0);
@@ -799,23 +476,368 @@ textarea {
         width: 100%;
     }
 }*/
-/*
-@import "./pages/detailsPedido.scss";
-@import "./pages/detailsMensagens.scss";
-@import "./pages/detailsPedido.scss";
-@import "./pages/forms.scss";
-@import "./pages/formsUser.scss";
-@import "./pages/editarEndereco.scss";
+.btnsBorders {
+  width: 100%;
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btnsBorders:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsBorders:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
 
-@import "./pages/cadasterProduct.scss";
-@import "./pages/consultaProduct.scss";
-@import "./pages/cadasterVariation.scss";
-@import "./pages/consultaClass.scss";
-@import "./pages/consultaVaris.scss";
-@import "./mediaQueries/telaPedidos.scss";
-@import "./mediaQueries/detailsPedido.scss";
-@import "./mediaQueries/detailsMensagens.scss";
-*/
+.btnsBordersBottomLess {
+  font-size: 1em;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btnsBordersBottomLess:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsBordersBottomLess:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.btnDireEsquer {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+}
+
+.btnsCancel {
+  font-size: 0.9em;
+  background-color: rgb(255, 111, 111);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border: none;
+}
+.btnsCancel:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsCancel:hover {
+  background-color: red;
+}
+
+.btnsConfirm {
+  font-size: 0.9em;
+  background-color: rgb(93, 248, 93);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border: none;
+}
+.btnsConfirm:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsConfirm:hover {
+  background-color: rgb(17, 218, 17);
+}
+
+.btnBlack {
+  font-size: 1em;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.btnBlack:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnBlack:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.btnsColorProduct {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1em;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btnsColorProduct:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsColorProduct:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.qualCor {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: aqua;
+}
+
+.title {
+  font-size: 1.3em;
+}
+
+.titleForms {
+  font-size: 1.6em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.titleBorders {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.inputFile {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.inputFile::file-selector-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 160px;
+}
+
+.inputs {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+#sectionForms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#forms {
+  width: 350px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
+  text-align: center;
+}
+#forms a {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 395px) {
+  #forms {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #forms {
+    width: 280px;
+  }
+}
+#sectionProduct .cardsProdu {
+  background-color: black;
+  border-radius: 8px;
+}
+
+#divInputConsul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0px 15px;
+}
+#divInputConsul button {
+  width: 80px;
+}
+
+.inputsConsultas {
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+  border: none;
+}
+
+.divEditExclu {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.divEditExclu button {
+  width: 50%;
+}
+
+#sectionDetails {
+  margin: 20px 200px;
+}
+
+.titleDetalhes {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#holdInfosCar {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#divAlgumasInfos {
+  display: grid;
+  grid-template-areas: "boxPrima boxSecond";
+}
+
+#precoTotal {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1115px) {
+  #sectionDetails {
+    margin: 20px 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #sectionDetails {
+    margin: 20px 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  #sectionDetails {
+    margin: 20px 10px;
+  }
+}
+.cardsProductsCar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.infosProducts {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 340px) {
+  .infos {
+    font-size: 0.9em;
+  }
+}
+.imgCar {
+  width: 150px;
+}
+
+@media screen and (max-width: 440px) {
+  .imgCar {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .imgCar {
+    width: 80px;
+  }
+}
+.riscoQuebra {
+  margin: 2% 0%;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.divBoxDescri {
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.borderBoxs {
+  padding: 10px;
+  border: 1px solid rgb(63, 63, 63);
+}
+
+@media screen and (max-width: 740px) {
+  #divFerramentas {
+    grid-template-areas: "cardsFerramentas";
+  }
+}
+@media screen and (max-width: 330px) {
+  #boxInfosPerfil {
+    width: 280px;
+  }
+}
 @media (max-width: 1115px) {
   #containerCard {
     grid-template-areas: "cardsProdu cardsProdu ";
